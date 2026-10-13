@@ -248,6 +248,18 @@ with tempfile.TemporaryDirectory(prefix="tern-csv-", dir="/tmp") as temporary:
             ctl("shot csv-long-scrolled-right")
             print("PASS: long.csv renders all 18 columns; the sheet scrolls sideways to the last one")
 
+            def first_row_y():
+                # The header's marker: never virtualized, and the sideways scroll doesn't hide it.
+                return ctl(f"tree {MAIN} .csv-mark-head")["nodes"][0]["rect"][1]
+            top = first_row_y()
+            ctl(f"hover {MAIN} .csv-sheet")
+            ctl("wheel 0 600")
+            deadline = time.monotonic() + 10
+            while first_row_y() >= top:
+                assert time.monotonic() < deadline, ("a vertical wheel over the table scrolls the pane", first_row_y(), top)
+                time.sleep(0.2)
+            print("PASS: a vertical wheel over the table scrolls the pane")
+
             keys("Backspace")
             pick("zz-huge.csv")
             wait_text(MAIN, "zz-huge.csv is too large")

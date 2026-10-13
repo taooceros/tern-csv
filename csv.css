@@ -64,9 +64,11 @@
 	position: relative;
 	/* Every column at its natural width; wider than the pane, the sheet
 	   scrolls sideways with a native scrollbar, header and rows together
-	   (they are one grid). */
+	   (they are one grid). overflow-y stays visible: a hidden one makes the
+	   sheet take vertical wheel and trackpad scrolls without passing them on,
+	   so the pane wouldn't scroll over the table. */
 	overflow-x: auto;
-	overflow-y: hidden;
+	overflow-y: visible;
 	padding: 0 7px 10px;
 }
 
