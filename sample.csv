@@ -1,0 +1,14 @@
+id,name,city,joined,score,notes
+1,Ada Lovelace,London,1843-07-10,98.5,"Wrote the first program, for the Analytical Engine"
+2,Grace Hopper,"Arlington, VA",1944-07-02,97,"Popularized the term ""bug"""
+3,Alan Turing,Wilmslow,1936-11-12,99.1,"Two lines:
+On Computable Numbers"
+4,Edsger Dijkstra,Nuenen,1959-01-01,95,
+5,Barbara Liskov,"Cambridge, MA",1968-06-01,96.4,Substitution principle
+6,Ken Thompson,Berkeley,1969-08-01,94
+7,Margaret Hamilton,"Boston, MA",1965-01-01,97.8,"Apollo guidance software ""priority display"""
+8,Donald Knuth,Stanford,1962-09-01,98,TeX
+9,Frances Allen,"Peru, NY",1957-07-15,93.2,"Compilers, optimization"
+10,John McCarthy,Stanford,1958-01-01,92,Lisp
+11,Radia Perlman,Seattle,1985-05-05,90.5,Spanning tree
+12,Dennis Ritchie,Murray Hill,1967-01-01,96,C

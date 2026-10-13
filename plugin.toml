@@ -1,0 +1,18 @@
+schema = 1
+id = "csv"
+name = "CSV Table"
+version = "0.1.0"
+description = "Shows CSV and TSV files as a native table, with a Table | Text switch like Markdown's."
+icon = "grid"
+host = "host.luau"
+window = "window.luau"
+styles = ["csv.css"]
+
+[[blocks]]
+id = "table"
+title = "CSV Table"
+icon = "grid"
+files = ["*.csv", "*.tsv", "*.tab"]
+# The block needs a file or a folder: it opens from "Open with", the route
+# or the "Open CSV…" command.
+palette = false
