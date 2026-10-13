@@ -5,6 +5,10 @@ TSV file as a native, keyboard-driven table, with a **Table | Text** switch
 in its top-right corner, the way Tern's file block offers **Rendered |
 Source** for Markdown.
 
+| Table | Text (Tern's editor) | Wide file, scrolled right |
+| --- | --- | --- |
+| ![Table view of sample.csv](docs/switch-table.png) | ![Text view in Tern's file editor](docs/switch-text.png) | ![long.csv scrolled right with the horizontal scrollbar](docs/long-scrolled-right.png) |
+
 - A file opens on **Table**. **Text** (or `t`) puts Tern's own file block
   for the same file, the editable one a plain `.csv` opens in, in the
   table's place. **Show CSV as table** (`⌃⌥T`, or the palette) puts the
